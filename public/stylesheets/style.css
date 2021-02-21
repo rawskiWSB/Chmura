@@ -1,0 +1,6 @@
+.navbar{
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: center;
+}
