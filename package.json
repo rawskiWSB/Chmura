@@ -1,0 +1,26 @@
+{
+  "name": "chmura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawskiWSB/Chmura.git"
+  },
+  "author": "Piotr Rawski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawskiWSB/Chmura/issues"
+  },
+  "homepage": "https://github.com/rawskiWSB/Chmura#readme"
+}
