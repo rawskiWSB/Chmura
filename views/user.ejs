@@ -9,9 +9,31 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand"><img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">Feedmail</a>
+
+
         </div>
     </nav>
-    <H2 align="center">Nie jesteś zalogowany, <a href="./logowanie">zaloguj</a> się lub <a href="./rejestracja">zarejestruj</a>. </H2>
+    <div class="row">
+        <form action="/us" method="POST">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" value = <%= det.email %> >
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Rss url</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="rss" value = <%= det.rss %>>
+                </div>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="submit" class="btn btn-primary" formaction="send">Send Email</button>
+                <button type="submit" class="btn btn-secondary">Preview</button>
+                <button type="submit" class="btn btn-danger" formaction="rss">Add</button>
+            </div>
+        </form>
+    </div>
     <nav class="navbar fixed-bottom navbar-dark bg-dark">
         <div class="container-fluid">
 

@@ -1,0 +1,23 @@
+const mongoose = require('mongoose');
+
+const uSchema = new mongoose.Schema({
+    d: {
+        type: Date,
+        default: Date.now
+    },
+    username: {
+        type: String
+    },
+    email: {
+        type: String
+    },
+    password: {
+        type:String
+    },
+    rss: {
+        type:String
+    }
+
+})
+
+module.exports = mongoose.model('rssDb',uSchema);
