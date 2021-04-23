@@ -13,7 +13,6 @@ const mjml2html = require('mjml')
 //const API_KEY = "";
 //const DOMAIN = "";
 const mailgun = require('mailgun-js')({apiKey: process.env.API_KEY, domain: process.env.DOMAIN});
-console.log(process.env.API_KEY)
 
 app.use("/static", express.static("public"));
 
@@ -33,7 +32,6 @@ mongoose.connect('mongodb+srv://yoda:yoda@cluster0.g2qbi.mongodb.net/myFirstData
 
 // GET METHOD MAIN PAGE
 app.get("/", (req, res) => {
-    console.log(process.env.API_KEY)
 
     res.render("index.ejs");
 });
