@@ -10,9 +10,9 @@ const usersDb = require("./models/RssDb");
 const mongoose = require("mongoose");
 const Parser = require('rss-parser')
 const mjml2html = require('mjml')
-const API_KEY = "";
-const DOMAIN = "";
-const mailgun = require('mailgun-js')({apiKey: process.env.API_KEY || API_KEY, domain: process.env.DOMAIN || DOMAIN});
+//const API_KEY = "";
+//const DOMAIN = "";
+const mailgun = require('mailgun-js')({apiKey: process.env.API_KEY, domain: process.env.DOMAIN});
 console.log(process.env.API_KEY)
 
 app.use("/static", express.static("public"));
