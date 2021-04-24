@@ -14,6 +14,7 @@ const mjml2html = require('mjml')
 //const DOMAIN = "";
 const mailgun = require('mailgun-js')({apiKey: process.env.API_KEY, domain: process.env.DOMAIN});
 
+
 app.use("/static", express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -170,3 +171,5 @@ function sender(mailAdress, msg) {
         console.log(body);
     });
 }
+
+module.exports = app;
