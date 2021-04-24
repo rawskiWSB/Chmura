@@ -26,7 +26,9 @@ app.set('view engine', 'ejs');
 //CONNECT TO DATABASE
 mongoose.set("useFindAndModify", false);
 
-mongoose.connect('mongodb+srv://yoda:yoda@cluster0.g2qbi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true }, () => {
+
+//ADD MONGODB CONNECTION STRING
+mongoose.connect('', { useNewUrlParser: true }, () => {
     console.log("Polaczony z db!");
     app.listen(process.env.PORT || 8000, () => console.log("Dzialam na 8000!"));
 });
